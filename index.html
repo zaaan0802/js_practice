@@ -6,20 +6,19 @@
 </head>
 <body>
   <script>
-    let i = true
-    while (i) {
+    while (true) {
     const result = window.prompt('日本の首都は？');
     if (result === '知らん') {
       //不適切な表現があったら処理を抜ける（アレンジしてみました）
-      i = false;
+      break;
     } else if (result === '東京'){
       //正しければ「正解」と表示
       window.alert('正解です！')
     }
     else {
       //不適切な表現以外の間違いは処理を続け「不正解」と表示
-      window.alert('不正解です！')
-    }
+       window.alert('不正解です！')
+      }
     }
   </script>
 </body>
