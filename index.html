@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript課題 ①-2</title>
+</head>
+<body>
+  <script>
+    let i = true
+    while (i) {
+    const result = window.prompt('日本の首都は？');
+    if (result === '知らん') {
+      //不適切な表現があったら処理を抜ける（アレンジしてみました）
+      i = false;
+    } else if (result === '東京'){
+      //正しければ「正解」と表示
+      window.alert('正解です！')
+    }
+    else {
+      //不適切な表現以外の間違いは処理を続け「不正解」と表示
+      window.alert('不正解です！')
+    }
+    }
+  </script>
+</body>
+</html>
